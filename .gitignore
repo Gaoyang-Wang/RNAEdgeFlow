@@ -1,29 +1,17 @@
-__pycache__/
-.Rhistory
-.Rproj.user/
+# runtime outputs
+**/fastp.json
+**/fastp.html
+**/Log.out
+**/Log.progress.out
+**/*.tmp
+**/.snakemake/
+**/.nextflow/
+**/.Rhistory
+**/.Rproj.user
+**/*.Rproj
 
-# Pipeline outputs
-*/log/
-*/result/
-*/process/
-*/coverage/
-*/readsID/
-*/stat/
-
-# Common heavy files
-*.fastq
-*.fastq.gz
-*.fq
-*.fq.gz
-*.bam
-*.bam.bai
-*.bed
-*.bedgraph
-*.bw
-*.html
-*.json
-*.zip
-*.tmp
-*_STARtmp/
-Log.out
-Log.progress.out
+# large outputs
+**/process/**
+**/result/**
+**/log/**
+**/example_data/test_001/**
