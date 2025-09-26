@@ -1,0 +1,13 @@
+sample	part	stage	reads	fraction
+test_001	all	raw	2746030	1.00
+test_001	3P	raw	61174	0.02
+test_001	5P	raw	48068	0.02
+test_001	internal	raw	2636788	0.96
+test_001	all	clean	2721889	1.00
+test_001	3P	clean	56039	0.02
+test_001	5P	clean	47602	0.02
+test_001	internal	clean	2618248	0.96
+test_001	all	mapped	1165086	1.00
+test_001	3P	mapped	26748	0.02
+test_001	5P	mapped	6980	0.01
+test_001	internal	mapped	1131358	0.97

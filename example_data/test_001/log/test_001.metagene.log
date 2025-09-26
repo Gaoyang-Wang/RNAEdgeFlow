@@ -1,0 +1,33 @@
+[2025-09-26 06:05:33] [STEP] 3P: BAM -> bigWig
+[2025-09-26 06:05:33] [STEP] 5P: BAM -> bigWig
+[2025-09-26 06:05:34] [STEP] internal: BAM -> bigWig
+[2025-09-26 06:05:49] [STEP] Check & install required R packages if missing
+Warning message:
+replacing previous import ‘Biostrings::pattern’ by ‘grid::pattern’ when loading ‘genomation’ 
+[RDEP] optparse => OK 
+[RDEP] GenomicRanges => OK 
+[RDEP] GenomicFeatures => OK 
+[RDEP] rtracklayer => OK 
+[RDEP] genomation => OK 
+[RDEP] ggplot2 => OK 
+[RDEP] cowplot => OK 
+[RDEP] Warning message:
+[RDEP] replacing previous import ‘Biostrings::pattern’ by ‘grid::pattern’ when loading ‘genomation’ 
+[2025-09-26 06:06:14] [STEP] R plotting ...
+Warning message:
+replacing previous import ‘Biostrings::pattern’ by ‘grid::pattern’ when loading ‘genomation’ 
+Import genomic features from the file as a GRanges object ... OK
+Prepare the 'metadata' data frame ... OK
+Make the TxDb object ... OK
+Warning message:
+In .get_cds_IDX(mcols0$type, mcols0$phase) :
+  The "phase" metadata column contains non-NA values for features of type
+  stop_codon. This information was ignored.
+There were 50 or more warnings (use warnings() to see the first 50)
+There were 50 or more warnings (use warnings() to see the first 50)
+There were 50 or more warnings (use warnings() to see the first 50)
+Warning message:
+Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+Saved plot -> /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/metagene/metagene_bw.png
+[2025-09-26 06:06:45] [DONE] Metagene plot -> /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/metagene/metagene_bw.png

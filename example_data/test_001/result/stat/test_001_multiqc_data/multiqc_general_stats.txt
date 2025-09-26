@@ -1,0 +1,6 @@
+Sample	Samtools_mqc-generalstats-samtools-flagstat_total	Samtools_mqc-generalstats-samtools-mapped_passed	Samtools_mqc-generalstats-samtools-mapped_passed_pct	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-median_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences
+BCnewAlldt_MaUP_YPS_S16_R1_001.10pct				61.08274555280777	45.0	80.0	80	18.181818181818183	2746030.0
+BCnewAlldt_MaUP_YPS_S16_R2_001.10pct				68.30423158034353	46.0	25.0	25	27.27272727272727	2746030.0
+test_001_3P	26748	26748	100.0						
+test_001_5P	6980	6980	100.0						
+test_001_internal	1131358	1131358	100.0						

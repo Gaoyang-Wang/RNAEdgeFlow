@@ -1,0 +1,1 @@
+test_001	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/internal_expr/test_001_internal_sample.gtf

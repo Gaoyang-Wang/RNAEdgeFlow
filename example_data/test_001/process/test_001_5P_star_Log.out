@@ -1,0 +1,207 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2025-01-09T12:32:06+0000 :/opt/conda/conda-bld/star_1736425784849/work/source
+##### Command Line:
+/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/software/miniconda3/envs/readsMaster/bin/STAR-avx2 --runThreadN 10 --runMode alignReads --readFilesCommand zcat --genomeDir /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/TSS_PAS/data/genome/STARIndex2.7.11 --genomeLoad LoadAndKeep --readFilesIn /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz --limitBAMsortRAM 100000000000 --alignIntronMax 2500 --outSAMtype BAM SortedByCoordinate --outFilterMultimapNmax 1 --outFileNamePrefix /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star_ --outStd Log --outBAMsortingThreadN 6
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star_
+outStd                            Log
+###### All USER parameters from Command Line:
+runThreadN                    10     ~RE-DEFINED
+runMode                       alignReads        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+genomeDir                     /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/TSS_PAS/data/genome/STARIndex2.7.11     ~RE-DEFINED
+genomeLoad                    LoadAndKeep     ~RE-DEFINED
+readFilesIn                   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz        ~RE-DEFINED
+limitBAMsortRAM               100000000000     ~RE-DEFINED
+alignIntronMax                2500     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outFilterMultimapNmax         1     ~RE-DEFINED
+outFileNamePrefix             /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star_     ~RE-DEFINED
+outStd                        Log     ~RE-DEFINED
+outBAMsortingThreadN          6     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads   
+runThreadN                        10
+genomeDir                         /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/TSS_PAS/data/genome/STARIndex2.7.11
+genomeLoad                        LoadAndKeep
+readFilesIn                       /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz   
+readFilesCommand                  zcat   
+limitBAMsortRAM                   100000000000
+outFileNamePrefix                 /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star_
+outStd                            Log
+outSAMtype                        BAM   SortedByCoordinate   
+outBAMsortingThreadN              6
+outFilterMultimapNmax             1
+alignIntronMax                    2500
+
+-------------------------------
+##### Final effective command line:
+/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/software/miniconda3/envs/readsMaster/bin/STAR-avx2   --runMode alignReads      --runThreadN 10   --genomeDir /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/TSS_PAS/data/genome/STARIndex2.7.11   --genomeLoad LoadAndKeep   --readFilesIn /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz      --readFilesCommand zcat      --limitBAMsortRAM 100000000000   --outFileNamePrefix /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star_   --outStd Log   --outSAMtype BAM   SortedByCoordinate      --outBAMsortingThreadN 6   --outFilterMultimapNmax 1   --alignIntronMax 2500
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-r--r-- 1 gaoyangw pg_sllstore2017018 1310783 Sep 26 03:33 /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz
+
+   readsCommandsFile:
+exec > "/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star__STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-r--r-- 1 gaoyangw pg_sllstore2017018 1042313 Sep 26 03:33 /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz
+
+   readsCommandsFile:
+exec > "/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_star__STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/software/miniconda3/envs/readsMaster/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 8   --genomeDir ./STARIndex2.7.11   --genomeFastaFiles sacCer3.fa      --sjdbGTFfile sacCer3.ensGene.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              sacCer3.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   sacCer3.ensGene.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               14753228   100896720        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 17
+1	chrI	230218	0
+2	chrII	813184	262144
+3	chrIII	316620	1310720
+4	chrIV	1531933	1835008
+5	chrIX	439888	3407872
+6	chrV	576874	3932160
+7	chrVI	270161	4718592
+8	chrVII	1090940	5242880
+9	chrVIII	562643	6553600
+10	chrX	745751	7340032
+11	chrXI	666816	8126464
+12	chrXII	1078177	8912896
+13	chrXIII	924431	10223616
+14	chrXIV	784333	11272192
+15	chrXV	1091291	12058624
+16	chrXVI	948066	13369344
+17	chrM	85779	14417920
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Fri Sep 26 03:34:14 2025
+
+Genome: size given as a parameter = 14753228
+SA: size given as a parameter = 100896720
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=14753228;  nSAbyte=100896720
+GstrandBit=32   SA number of indices=24459810
+Found genome in shared memory
+Using shared memory for genome. key=0x1013150;   shmid=6979610
+Finished loading the genome: Fri Sep 26 03:34:14 2025
+
+Processing splice junctions database sjdbN=364,   pGe.sjdbOverhang=100 
+To accommodate alignIntronMax=2500 redefined winBinNbits=9
+To accommodate alignIntronMax=2500 and alignMatesGapMax=0, redefined winFlankNbins=5 and winAnchorDistNbins=10
+Created thread # 1
+Created thread # 2
+Starting to map file # 0
+mate 1:   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R1.fastq.gz
+mate 2:   /cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/process/test_001_5P_clean_R2.fastq.gz
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #4
+Completed: thread #3
+Completed: thread #5
+Completed: thread #8
+Completed: thread #7
+Completed: thread #6
+Completed: thread #9
+Completed: thread #0
+BAM sorting: 7324 mapped reads
+BAM sorting bins genomic start loci:
+1	1	37984
+2	1	299163
+3	1	382051
+4	1	496768
+5	2	16844
+6	2	284406
+7	3	238076
+8	3	607882
+9	3	897286
+10	3	1301872
+11	4	157960
+12	5	133807
+13	5	365613
+14	5	442191
+15	5	442264
+16	5	442298
+17	5	442298
+18	5	442311
+19	5	442361
+20	5	442412
+21	5	442431
+22	5	482192
+23	6	107196
+24	6	254350
+25	7	387924
+26	7	656268
+27	7	1004572
+28	8	295429
+29	9	228231
+30	9	621904
+31	10	117219
+32	10	475855
+33	11	90091
+34	11	340796
+35	11	637520
+36	11	806580
+37	12	71741
+38	12	440787
+39	12	762512
+40	13	44745
+41	13	410387
+42	14	48909
+43	14	485432
+44	14	739346
+45	14	839887
+46	15	113148
+47	15	551017
+48	15	830498
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Sep 26 03:34:17 ..... finished mapping
+RAM after mapping:
+VmPeak:	 6067524 kB; VmSize:	 3301952 kB; VmHWM:	 1593292 kB; VmRSS:	 1591896 kB; 
+Sep 26 03:34:17 ..... started sorting BAM
+Max memory needed for sorting = 66883
+ALL DONE!

@@ -1,0 +1,29 @@
+__pycache__/
+.Rhistory
+.Rproj.user/
+
+# Pipeline outputs
+*/log/
+*/result/
+*/process/
+*/coverage/
+*/readsID/
+*/stat/
+
+# Common heavy files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.bed
+*.bedgraph
+*.bw
+*.html
+*.json
+*.zip
+*.tmp
+*_STARtmp/
+Log.out
+Log.progress.out

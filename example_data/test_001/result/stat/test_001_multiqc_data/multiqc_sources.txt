@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+Samtools	flagstat	test_001_5P	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/test_001_5P.flagstat
+Samtools	flagstat	test_001_internal	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/test_001_internal.flagstat
+Samtools	flagstat	test_001_3P	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/test_001_3P.flagstat
+Snippy	snippy	multiqc	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/test_001_multiqc_data/multiqc.log
+FastQC	all_sections	BCnewAlldt_MaUP_YPS_S16_R1_001.10pct	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/BCnewAlldt_MaUP_YPS_S16_R1_001.10pct_fastqc.zip
+FastQC	all_sections	BCnewAlldt_MaUP_YPS_S16_R2_001.10pct	/cfs/klemming/projects/supr/sllstore2017018/nobackup/projects/gywang/project/EPIC/RNAEdgeFlow/example_data/test_001/result/stat/BCnewAlldt_MaUP_YPS_S16_R2_001.10pct_fastqc.zip

@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+show_root_help() {
+  cat <<'EOF'
+RNAEdgeFlow — main entry
+
+USAGE:
+  rnaedgeflow <command> [options]
+
+COMMANDS:
+  pipeline    Run the core pipeline (wraps scripts/run_pipeline.sh)
+  metagene    Compute metagene coverage/plot (multi-sample capable)
+  advanced    Advanced analyses (skeleton)
+
+Run 'rnaedgeflow <command> --help' for command-specific options.
+EOF
+}
+
+cmd="${1:-}"
+case "${cmd}" in
+  -h|--help|"")
+    show_root_help
+    ;;
+
+  pipeline)
+    shift
+    if [[ "${1:-}" == "--help" ]]; then
+      echo "USAGE: rnaedgeflow pipeline --profile <profile>"
+      exit 0
+    fi
+    exec "$(dirname "$0")/scripts/run_pipeline.sh" "$@"
+    ;;
+
+  metagene)
+    shift
+    if [[ "${1:-}" == "--help" ]]; then
+      cat <<'HLP'
+USAGE:
+  rnaedgeflow metagene --profile <profile> [--bins 100] [--up 1000] [--down 1000]
+  rnaedgeflow metagene --gtf <GTF> --inputdir <DIR> [--bins 100] [--up 1000] [--down 1000]
+  rnaedgeflow metagene --gtf <GTF> \
+    --inputBam1 <bam> --sample1 <name> \
+   [--inputBam2 <bam> --sample2 <name>] \
+   [--inputBam3 <bam> --sample3 <name>] \
+   [--bins 100] [--up 1000] [--down 1000]
+
+Notes:
+  - When --profile is given, script reads GTF and will auto-pick BAMs produced by pipeline.
+  - With --inputdir, all *.bam in DIR are plotted together.
+  - With explicit inputBam*/sample* pairs (max 3), only those are plotted.
+HLP
+      exit 0
+    fi
+    exec "$(dirname "$0")/scripts/metagene_coverage.sh" "$@"
+    ;;
+
+  advanced)
+    shift
+    exec "$(dirname "$0")/scripts/advanced_analysis.sh" "$@"
+    ;;
+
+  *)
+    echo "[ERR] Unknown command: ${cmd}" >&2
+    show_root_help
+    exit 1
+    ;;
+esac

@@ -1,0 +1,41 @@
+name: rnaedgeflow
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core system
+  - python=3.10
+  - pip
+  - bash
+  - coreutils
+  - parallel
+  - sed
+  - grep
+  - gawk
+
+  # Sequence tools
+  - seqkit
+  - fastp
+  - cutadapt
+  - star
+  - samtools
+  - bedtools
+  - umi_tools
+  - stringtie
+  - fastqc
+  - multiqc
+
+  # bedGraph -> bigWig (UCSC tool)
+  - ucsc-bedgraphtobigwig
+
+  # R & Bioconductor packages
+  - r-base=4.3
+  - r-optparse
+  - r-ggplot2
+  - r-cowplot
+  - bioconductor-genomicranges
+  - bioconductor-genomicfeatures
+  - bioconductor-rtracklayer
+  - bioconductor-genomation
+  - bioconductor-txdbmaker   # required for makeTxDbFromGFF()
