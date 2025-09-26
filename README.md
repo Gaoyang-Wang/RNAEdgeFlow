@@ -21,49 +21,65 @@ It supports end-tag classification (5P, 3P, internal), UMI handling, adapter tri
 ## Installation
 
 Step 1. Clone the repository  
-git clone https://github.com/Gaoyang-Wang/RNAEdgeFlow.git  
-cd RNAEdgeFlow  
+```bash
+git clone https://github.com/Gaoyang-Wang/RNAEdgeFlow.git
+cd RNAEdgeFlow
+```
 
 Step 2. Create the Conda environment  
-bash install.sh  
+```bash
+bash install.sh
+```
 
 This will create a Conda environment named `rnaedgeflow` and install all required dependencies (Python, R, Bioconductor packages, bedtools, samtools, STAR, fastp, cutadapt, umi_tools, etc.).  
 
 Step 3. Activate the environment  
-conda activate rnaedgeflow  
+```bash
+conda activate rnaedgeflow
+```
 
 ---
 
 ## Usage
 
 ### 1. Run the full pipeline
-./rnaedgeflow pipeline --profile path/to/sample.profile  
+```bash
+./rnaedgeflow pipeline --profile path/to/sample.profile
+```
 
 `--profile` points to a `.profile` file describing all required parameters (sample name, input FASTQ prefix, STAR genome index, barcode/UMI patterns, etc.).  
 
 Outputs will be created under:  
-OutputDir/SampleName/  
-  ├── process/           # intermediate FASTQs and BAMs  
-  ├── result/            # final outputs  
-  │   ├── stat/          # QC and read statistics  
-  │   ├── internal_expr/ # StringTie expression  
-  │   └── terminal_bed/  # coverage profiles  
-  └── log/               # pipeline logs  
+```text
+OutputDir/SampleName/
+  ├── process/           # intermediate FASTQs and BAMs
+  ├── result/            # final outputs
+  │   ├── stat/          # QC and read statistics
+  │   ├── internal_expr/ # StringTie expression
+  │   └── terminal_bed/  # coverage profiles
+  └── log/               # pipeline logs
+```
 
 Example:  
-./rnaedgeflow pipeline --profile example_data/example.profile  
+```bash
+./rnaedgeflow pipeline --profile example_data/example.profile
+```
 
 ### 2. Metagene profiling
 
 (a) Scan all BAMs in a directory  
-./rnaedgeflow metagene --inputDir path/to/bam_dir --outputDir results/metagene_out  
+```bash
+./rnaedgeflow metagene --inputDir path/to/bam_dir --outputDir results/metagene_out [--bins 100] [--up 1000] [--down 1000]
+```
 
 (b) Explicitly provide BAM files + sample names  
-./rnaedgeflow metagene \  
-  --inputBam path/to/sample1.bam --sampleName Sample1 \  
-  --inputBam2 path/to/sample2.bam --sampleName2 Sample2 \  
-  --inputBam3 path/to/sample3.bam --sampleName3 Sample3 \  
-  --outputDir results/metagene_out  
+```bash
+./rnaedgeflow metagene \
+  --inputBam path/to/sample1.bam --sampleName Sample1 \
+  --inputBam2 path/to/sample2.bam --sampleName2 Sample2 \
+  --inputBam3 path/to/sample3.bam --sampleName3 Sample3 \
+  --outputDir results/metagene_out [--bins 100] [--up 1000] [--down 1000]
+```
 
 Options:  
 --upstream <bp>    number of bases upstream of TSS (default: 1000)  
@@ -71,10 +87,12 @@ Options:
 --bins <N>         number of bins per region (default: 100)  
 
 Example:  
-./rnaedgeflow metagene \  
-  --inputDir example_data/test_001/process \  
-  --upstream 500 --downstream 500 --bins 100 \  
-  --outputDir example_data/test_001/result/metagene  
+```bash
+./rnaedgeflow metagene \
+  --inputDir example_data/test_001/process \
+  --upstream 500 --downstream 500 --bins 100 \
+  --outputDir example_data/test_001/result/metagene
+```
 
 ---
 
@@ -82,13 +100,12 @@ Example:
 
 A small test dataset is included under `example_data/test_001`.  
 You can test the pipeline with:  
-./rnaedgeflow pipeline --profile example_data/example.profile  
-./rnaedgeflow metagene --inputDir example_data/test_001/process --bins 100  
+```bash
+./rnaedgeflow pipeline --profile example_data/example.profile
+./rnaedgeflow metagene --inputDir example_data/test_001/process --bins 100
+```
 
 ---
 
-## Citation
-
-If you use **RNAEdgeFlow** in your work, please cite this repository.  
 
 
